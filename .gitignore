@@ -1,0 +1,57 @@
+# Python
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+*.sqlite3
+db.sqlite3
+*.log
+*.pot
+*.py[co]
+
+# Virtual environment
+venv/
+env/
+ENV/
+venv.bak/
+.idea/
+*.swp
+
+# Django
+*.pyc
+*.pyo
+__pycache__/
+media/
+staticfiles/
+.DS_Store
+*.pyo
+*.pyc
+*.log
+
+# Ignore secret settings
+*.env
+*.key
+local_settings.py
+
+# Other editors/IDE files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Migrations (optional)
+*/migrations/*.py
+!*/migrations/__init__.py
+
+# Test results
+*.coverage
+.coverage.*
+
+# Byte-compiled files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Ignore private files
+*.env
+.env.*
