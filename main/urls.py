@@ -1,6 +1,6 @@
 from django.urls import path
-from . import views  # Импортируем представления из views.py
+from . import views  #
 
 urlpatterns = [
-    path('', views.index, name='index'),  # Путь по умолчанию для /index
+    path("", views.index, name="index"),
 ]
