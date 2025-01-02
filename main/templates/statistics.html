@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Общая статистика{% endblock %}
+
+{% block content %}
+<div class="container">
+    <h1 class="mt-5 mb-4">Общая статистика</h1>
+
+    <h2>Динамика уровня зарплат по годам</h2>
+    <img src="{% static 'images/salary_by_year.png' %}" alt="Динамика зарплат" class="img-fluid mb-4">
+
+    <h2>Динамика количества вакансий по годам</h2>
+    <img src="{% static 'images/vacancies_by_year.png' %}" alt="Динамика вакансий" class="img-fluid mb-4">
+
+    <h2>Уровень зарплат по городам</h2>
+    <img src="{% static 'images/salary_by_city.png' %}" alt="Уровень зарплат по городам" class="img-fluid mb-4">
+
+    <h2>Доля вакансий по городам</h2>
+    <img src="{% static 'images/vacancies_by_city.png' %}" alt="Доля вакансий по городам" class="img-fluid mb-4">
+
+    <h2>ТОП-20 навыков</h2>
+    <img src="{% static 'images/top_skills.png' %}" alt="ТОП-20 навыков" class="img-fluid mb-4">
+</div>
+{% endblock %}
+</title>
+</head>
+<body>
+
+</body>
+</html>
