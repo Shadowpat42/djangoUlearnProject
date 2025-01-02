@@ -26,6 +26,22 @@
         .content {
             flex: 1;
         }
+
+        /* Стили для подсветки меню при наведении */
+        .sidebar .nav-link {
+            color: #000; /* Основной цвет ссылок */
+            transition: background-color 0.3s, color 0.3s; /* Плавный переход */
+        }
+
+        .sidebar .nav-link:hover {
+            background-color: #c9e9ff; /* Цвет подсветки */
+            color: #007bff; /* Цвет текста при наведении */
+        }
+
+        .sidebar .nav-link.active {
+            background-color: #007bff; /* Цвет активного пункта */
+            color: #fff; /* Цвет текста активного пункта */
+        }
     </style>
 </head>
 
@@ -44,7 +60,7 @@
                     </div>
                     <ul class="nav flex-column">
                         <li class="nav-item">
-                            <a class="nav-link" href="/">Главная</a>
+                            <a class="nav-link active" href="/">Главная</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="/statistics">Общая статистика</a>
