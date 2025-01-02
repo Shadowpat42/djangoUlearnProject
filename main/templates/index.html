@@ -5,75 +5,111 @@
 
 {% block content %}
 <div class="py-5">
-    <h1 class="display-4 text-center mb-4">Добро пожаловать в мир DevOps!</h1>
-    <div class="row">
-        <div class="col-md-6">
-            <h2 class="text-primary">Что такое DevOps?</h2>
-            <p>
-                DevOps (сокращение от Development и Operations) — это методология и культура, которая объединяет
-                разработку программного обеспечения и IT-операции. Основная цель DevOps заключается в ускорении
-                разработки и развертывания приложений, улучшении качества программного обеспечения и повышении
-                удовлетворенности клиентов.
+    <h1 class="display-3 text-center fw-bold mb-5">Добро пожаловать в мир <span class="text-primary">DevOps!</span></h1>
+
+    <!-- Секция "Что такое DevOps?" -->
+    <section class="bg-light py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <h2 class="text-primary fw-bold mb-4">Что такое DevOps?</h2>
+                    <p>
+                        DevOps (сокращение от Development и Operations) — это методология и культура, которая объединяет разработку программного обеспечения и IT-операции. Основная цель DevOps заключается в ускорении разработки и развертывания приложений, улучшении качества программного обеспечения и повышении удовлетворенности клиентов.
+                    </p>
+                    <p>
+                        DevOps — это не просто набор технологий, а целый подход к созданию программного обеспечения, который включает в себя философию сотрудничества, автоматизацию процессов и внедрение лучших практик. Благодаря DevOps, компании могут быстрее доставлять свои продукты на рынок, повышать их качество и оперативно реагировать на изменения.
+                    </p>
+                    <h4 class="text-success mt-4">Ключевые принципы DevOps:</h4>
+                    <ul class="list-unstyled">
+                        <li><i class="fas fa-check-circle text-success me-2"></i> Сотрудничество и прозрачность между командами.</li>
+                        <li><i class="fas fa-check-circle text-success me-2"></i> Автоматизация всех повторяемых процессов.</li>
+                        <li><i class="fas fa-check-circle text-success me-2"></i> Непрерывная интеграция и доставка (CI/CD).</li>
+                        <li><i class="fas fa-check-circle text-success me-2"></i> Мониторинг и быстрое реагирование на изменения.</li>
+                    </ul>
+                </div>
+                <div class="col-md-6 text-center">
+                    <img src="{% static 'images/devops.webp' %}" alt="DevOps" class="img-fluid rounded shadow-lg">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Секция "Почему DevOps важен?" -->
+    <section class="py-5">
+        <div class="container">
+            <h2 class="text-center text-primary fw-bold mb-4">Почему DevOps важен?</h2>
+            <p class="text-center">
+                В современном мире технологии развиваются быстрее, чем когда-либо. Компании стремятся доставлять свои продукты и услуги с высокой скоростью, не жертвуя их качеством. DevOps помогает организациям улучшать процессы разработки, обеспечивать стабильность систем и ускорять выход на рынок.
             </p>
-            <h3 class="text-success mt-4">Ключевые принципы DevOps:</h3>
-            <ul>
-                <li>Сотрудничество и прозрачность между командами.</li>
-                <li>Автоматизация всех повторяемых процессов.</li>
-                <li>Непрерывная интеграция и доставка (CI/CD).</li>
-                <li>Мониторинг и быстрое реагирование на изменения.</li>
-            </ul>
+            <div class="row text-center">
+                <div class="col-md-4">
+                    <div class="card shadow-sm p-4 h-100">
+                        <i class="fas fa-rocket text-primary fa-3x mb-3"></i>
+                        <h5 class="fw-bold">Быстрота</h5>
+                        <p>
+                            DevOps позволяет компаниям сокращать время вывода продуктов на рынок. Автоматизация процессов, таких как сборка, тестирование и развертывание, позволяет быстрее доставлять новые функции пользователям.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card shadow-sm p-4 h-100">
+                        <i class="fas fa-shield-alt text-success fa-3x mb-3"></i>
+                        <h5 class="fw-bold">Надёжность</h5>
+                        <p>
+                            Благодаря инструментам мониторинга и автоматизированного тестирования, DevOps позволяет минимизировать ошибки и обеспечить стабильность систем. Надёжность продуктов — один из ключевых факторов успеха.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card shadow-sm p-4 h-100">
+                        <i class="fas fa-users text-warning fa-3x mb-3"></i>
+                        <h5 class="fw-bold">Командная работа</h5>
+                        <p>
+                            DevOps разрушает барьеры между командами разработчиков и IT-операций, создавая атмосферу сотрудничества. Все участники процесса работают на достижение общих целей, что значительно улучшает взаимодействие.
+                        </p>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="col-md-6 text-center">
-            <img src="{% static 'images/devops.webp' %}" alt="DevOps" class="img-fluid rounded">
+    </section>
+
+    <!-- Секция "Какие навыки нужны DevOps-инженеру?" -->
+    <section class="bg-light py-5">
+        <div class="container">
+            <h2 class="text-center text-primary fw-bold mb-4">Какие навыки нужны DevOps-инженеру?</h2>
+            <p class="text-center mb-4">
+                DevOps-инженер — это специалист широкого профиля. Вот ключевые навыки, которые необходимы:
+            </p>
+            <div class="row">
+                <div class="col-md-6">
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item"><i class="fas fa-tools text-success me-2"></i> Автоматизация: Jenkins, GitLab CI/CD</li>
+                        <li class="list-group-item"><i class="fas fa-cloud text-primary me-2"></i> Облачные технологии: AWS, Azure, GCP</li>
+                        <li class="list-group-item"><i class="fas fa-cube text-warning me-2"></i> Контейнеризация: Docker, Kubernetes</li>
+                        <li class="list-group-item"><i class="fas fa-code text-danger me-2"></i> Программирование: Python, Bash</li>
+                        <li class="list-group-item"><i class="fas fa-chart-line text-info me-2"></i> Мониторинг: Prometheus, Grafana</li>
+                    </ul>
+                </div>
+                <div class="col-md-6 text-center">
+                    <img src="{% static 'images/devops.webp' %}" alt="Навыки DevOps" class="img-fluid rounded shadow-lg">
+                </div>
+            </div>
         </div>
-    </div>
+    </section>
 
-    <hr class="my-5">
-
-    <div>
-        <h2 class="text-primary">Почему DevOps важен?</h2>
+    <!-- Секция "Заключение" -->
+<section class="py-5 text-center" style="background-color: #e5f4ff;">
+    <div class="container">
+        <h2 class="fw-bold">Заключение</h2>
+        <p class="mt-3">
+            Профессия DevOps объединяет лучшие практики разработки и эксплуатации. Это путь для тех, кто хочет не только работать с передовыми технологиями, но и создавать новые стандарты качества. DevOps — это о скорости, стабильности и сотрудничестве.
+        </p>
         <p>
-            В современном мире технологии развиваются быстрее, чем когда-либо. Компании стремятся доставлять свои
-            продукты и услуги с высокой скоростью, не жертвуя их качеством. DevOps помогает организациям:
+            Готовы начать свой путь в DevOps? Оставьте заявку и станьте частью команды, которая меняет мир технологий!
         </p>
-        <ul>
-            <li><strong>Уменьшить время вывода продукта на рынок:</strong> за счёт автоматизации и ускорения процессов.</li>
-            <li><strong>Повысить надежность:</strong> за счёт автоматизированного тестирования и мониторинга.</li>
-            <li><strong>Улучшить командную работу:</strong> благодаря интеграции разработчиков и IT-операций.</li>
-        </ul>
+        <a href="/contact" class="btn btn-primary btn-lg mt-4">Связаться с нами</a>
     </div>
+</section>
 
-    <hr class="my-5">
-
-    <div>
-        <h2 class="text-primary">Какие навыки нужны DevOps-инженеру?</h2>
-        <p>
-            DevOps-инженер — это специалист широкого профиля, который должен обладать следующими навыками:
-        </p>
-        <ol>
-            <li><strong>Автоматизация:</strong> знание инструментов автоматизации, таких как Jenkins, GitLab CI/CD.</li>
-            <li><strong>Облачные технологии:</strong> AWS, Azure, Google Cloud.</li>
-            <li><strong>Контейнеризация:</strong> Docker и оркестрация Kubernetes.</li>
-            <li><strong>Программирование:</strong> владение Python, Bash или другим языком.</li>
-            <li><strong>Мониторинг и логирование:</strong> использование Prometheus, Grafana, ELK-стека.</li>
-        </ol>
-        <p>
-            Также важно умение работать в команде, решать сложные задачи и адаптироваться к изменениям.
-        </p>
-    </div>
-
-    <hr class="my-5">
-
-    <div>
-        <h2 class="text-primary">Заключение</h2>
-        <p>
-            Профессия DevOps — это не только о технологиях, но и о культуре и подходах. Она требует постоянного
-            обучения, изучения новых инструментов и технологий. DevOps-инженеры — это специалисты, которые двигают
-            индустрию вперёд, создавая стабильные и надёжные системы.
-        </p>
-        <p class="text-center">
-            Если вы хотите стать частью будущего технологий, DevOps — это ваш путь!
-        </p>
-    </div>
 </div>
 {% endblock %}
